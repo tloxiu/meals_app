@@ -245,7 +245,7 @@ const categoriesMeals = [
       'Orange Peel',
     ],
     steps: [
-      'Dissolve gelatine in pot',
+      'Dissolve gelatine in the pot',
       'Add orange juice and sugar',
       'Take pot off the stove',
       'Add 2 tablespoons of yoghurt',
