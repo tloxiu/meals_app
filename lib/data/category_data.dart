@@ -6,61 +6,61 @@ const availableCategories = [
     id: 'c1',
     title: 'Italian',
     color: Color.fromARGB(255, 225, 175, 209),
-    imageAsset: 'assets/italian.png',
+    imageAsset: 'assets/category_meals_pictures/italian.png',
   ),
   Category(
     id: 'c2',
     title: 'Quick & Easy',
     color: Color.fromARGB(255, 133, 88, 111),
-    imageAsset: 'assets/quickeasy.png',
+    imageAsset: 'assets/category_meals_pictures/quickeasy.png',
   ),
   Category(
     id: 'c3',
     title: 'Hamburgers',
     color: Color.fromARGB(255, 173, 136, 198),
-    imageAsset: 'assets/hamburgers.png',
+    imageAsset: 'assets/category_meals_pictures/hamburgers.png',
   ),
   Category(
     id: 'c4',
     title: 'German',
     color: Color.fromARGB(255, 255, 105, 105),
-    imageAsset: 'assets/german.png',
+    imageAsset: 'assets/category_meals_pictures/german.png',
   ),
   Category(
     id: 'c5',
     title: 'Light & Lovely',
     color: Color.fromARGB(255, 172, 125, 136),
-    imageAsset: 'assets/lightlovely.png',
+    imageAsset: 'assets/category_meals_pictures/lightlovely.png',
   ),
   Category(
     id: 'c6',
     title: 'Exotic',
     color: Color.fromARGB(255, 128, 188, 189),
-    imageAsset: 'assets/exotic.png',
+    imageAsset: 'assets/category_meals_pictures/exotic.png',
   ),
   Category(
     id: 'c7',
     title: 'Breakfast',
     color: Color.fromARGB(255, 172, 225, 175),
-    imageAsset: 'assets/breakfast.png',
+    imageAsset: 'assets/category_meals_pictures/breakfast.png',
   ),
   Category(
     id: 'c8',
     title: 'Asian',
     color: Color.fromARGB(255, 225, 175, 209),
-    imageAsset: 'assets/asian.png',
+    imageAsset: 'assets/category_meals_pictures/asian.png',
   ),
   Category(
     id: 'c9',
     title: 'French',
     color: Color.fromARGB(255, 155, 176, 193),
-    imageAsset: 'assets/french.png',
+    imageAsset: 'assets/category_meals_pictures/french.png',
   ),
   Category(
     id: 'c10',
     title: 'Summer',
     color: Colors.teal,
-    imageAsset: 'assets/summer.png',
+    imageAsset: 'assets/category_meals_pictures/summer.png',
   ),
 ];
 
@@ -74,7 +74,7 @@ const categoriesMeals = [
     title: 'Spaghetti with Tomato Sauce',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageAsset: 'assets/pasta.png',
+    imageAsset: 'assets/detailed_meals_pictures/spaghettiwithtomatosouce.png',
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -106,8 +106,7 @@ const categoriesMeals = [
     title: 'Toast Hawaii',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/toasthawaii.png',
     duration: 10,
     ingredients: [
       '1 Slice White Bread',
@@ -135,8 +134,7 @@ const categoriesMeals = [
     title: 'Classic Hamburger',
     affordability: Affordability.pricey,
     complexity: Complexity.simple,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/classichamburger.png',
     duration: 45,
     ingredients: [
       '300g Cattle Hack',
@@ -166,8 +164,7 @@ const categoriesMeals = [
     title: 'Wiener Schnitzel',
     affordability: Affordability.luxurious,
     complexity: Complexity.challenging,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/wienerschnitzel.png',
     duration: 60,
     ingredients: [
       '8 Veal Cutlets',
@@ -203,8 +200,7 @@ const categoriesMeals = [
     title: 'Salad with Smoked Salmon',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/saladwithsalmon.png',
     duration: 15,
     ingredients: [
       'Arugula',
@@ -238,8 +234,7 @@ const categoriesMeals = [
     title: 'Delicious Orange Mousse',
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/deliciousorangemousse.png',
     duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
@@ -273,8 +268,7 @@ const categoriesMeals = [
     title: 'Pancakes',
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/pancakes.png',
     duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
@@ -304,8 +298,7 @@ const categoriesMeals = [
     title: 'Creamy Indian Chicken Curry',
     affordability: Affordability.pricey,
     complexity: Complexity.challenging,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/indianchickencurry.png',
     duration: 35,
     ingredients: [
       '4 Chicken Breasts',
@@ -337,8 +330,7 @@ const categoriesMeals = [
     title: 'Chocolate Souffle',
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/chocolatesouffle.png',
     duration: 45,
     ingredients: [
       '1 Teaspoon melted Butter',
@@ -385,11 +377,10 @@ const categoriesMeals = [
       'c5',
       'c10',
     ],
-    title: 'Asparagus Salad with Cherry Tomatoes',
+    title: 'Grilled Asparagus Salad',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
-    imageAsset:
-        'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+    imageAsset: 'assets/detailed_meals_pictures/grilledasparagussalad.png',
     duration: 30,
     ingredients: [
       'White and Green Asparagus',

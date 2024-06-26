@@ -18,14 +18,24 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/italian.png
-    - assets/spaghetti.png
-    - assets/quickeasy.png
-    - assets/hamburgers.png
-    - assets/german.png
-    - assets/lightlovely.png
-    - assets/exotic.png
-    - assets/breakfast.png
-    - assets/asian.png
-    - assets/french.png
-    - assets/summer.png
+    - assets/category_meals_pictures/italian.png
+    - assets/category_meals_pictures/spaghetti.png
+    - assets/category_meals_pictures/quickeasy.png
+    - assets/category_meals_pictures/hamburgers.png
+    - assets/category_meals_pictures/german.png
+    - assets/category_meals_pictures/lightlovely.png
+    - assets/category_meals_pictures/exotic.png
+    - assets/category_meals_pictures/breakfast.png
+    - assets/category_meals_pictures/asian.png
+    - assets/category_meals_pictures/french.png
+    - assets/category_meals_pictures/summer.png
+    - assets/detailed_meals_pictures/spaghettiwithtomatosouce.png
+    - assets/detailed_meals_pictures/toasthawaii.png
+    - assets/detailed_meals_pictures/classichamburger.png
+    - assets/detailed_meals_pictures/wienerschnitzel.png
+    - assets/detailed_meals_pictures/saladwithsalmon.png
+    - assets/detailed_meals_pictures/deliciousorangemousse.png
+    - assets/detailed_meals_pictures/pancakes.png
+    - assets/detailed_meals_pictures/indianchickencurry.png
+    - assets/detailed_meals_pictures/chocolatesouffle.png
+    - assets/detailed_meals_pictures/grilledasparagussalad.png

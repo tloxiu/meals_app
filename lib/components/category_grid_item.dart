@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app/models/category_model.dart';
+import 'package:meals_app/screens/category_list_screen.dart';
 
 class CategoryGridItem extends StatelessWidget {
   const CategoryGridItem(
@@ -11,9 +12,18 @@ class CategoryGridItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (BuildContext context) => CategoriesListScreen(
+                category: category,
+              ),
+            ),
+          );
+        },
         splashColor: Colors.black,
         borderRadius: BorderRadius.circular(15),
         child: Container(
@@ -21,7 +31,12 @@ class CategoryGridItem extends StatelessWidget {
           width: 200,
           height: 130,
           decoration: BoxDecoration(
-            gradient: LinearGradient(colors: [category.color, category.color.withOpacity(0.9)]),
+            gradient: LinearGradient(
+              colors: [
+                category.color,
+                category.color.withOpacity(0.9),
+              ],
+            ),
             borderRadius: BorderRadius.circular(15),
           ),
           child: Column(
