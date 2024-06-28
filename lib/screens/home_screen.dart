@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Image.asset('assets/spaghetti.png'),
+              Image.asset('assets/category_meals_pictures/spaghetti.png'),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Text(

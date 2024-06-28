@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app/models/category_model.dart';
-import 'package:meals_app/screens/category_list_screen.dart';
+import 'package:meals_app/screens/meals_list_screen.dart';
 
-class CategoryGridItem extends StatelessWidget {
-  const CategoryGridItem(
+class CategoriesScreenGridItem extends StatelessWidget {
+  const CategoriesScreenGridItem(
       {required this.category, required this.imageAsset, super.key});
 
   final Category category;
@@ -18,7 +18,7 @@ class CategoryGridItem extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (BuildContext context) => CategoriesListScreen(
+              builder: (BuildContext context) => MealsListScreen(
                 category: category,
               ),
             ),
