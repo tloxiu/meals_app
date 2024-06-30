@@ -7,60 +7,70 @@ const availableCategories = [
     title: 'Italian',
     color: Color.fromARGB(255, 225, 175, 209),
     imageAsset: 'assets/category_meals_pictures/italian.png',
+    backgroundColor: Color.fromARGB(255, 204, 143, 195)
   ),
   Category(
     id: 'c2',
     title: 'Quick & Easy',
     color: Color.fromARGB(255, 133, 88, 111),
     imageAsset: 'assets/category_meals_pictures/quickeasy.png',
+    backgroundColor: Color.fromARGB(255, 81, 51, 76)
   ),
   Category(
     id: 'c3',
     title: 'Hamburgers',
     color: Color.fromARGB(255, 173, 136, 198),
     imageAsset: 'assets/category_meals_pictures/hamburgers.png',
+    backgroundColor: Color.fromARGB(255, 136, 95, 154)
   ),
   Category(
     id: 'c4',
     title: 'German',
     color: Color.fromARGB(255, 255, 105, 105),
     imageAsset: 'assets/category_meals_pictures/german.png',
+    backgroundColor: Color.fromARGB(255, 203, 83, 83)
   ),
   Category(
     id: 'c5',
     title: 'Light & Lovely',
     color: Color.fromARGB(255, 172, 125, 136),
     imageAsset: 'assets/category_meals_pictures/lightlovely.png',
+    backgroundColor: Color.fromARGB(255, 129, 92, 101)
   ),
   Category(
     id: 'c6',
     title: 'Exotic',
     color: Color.fromARGB(255, 128, 188, 189),
     imageAsset: 'assets/category_meals_pictures/exotic.png',
+    backgroundColor: Color.fromARGB(255, 112, 163, 164)
   ),
   Category(
     id: 'c7',
     title: 'Breakfast',
-    color: Color.fromARGB(255, 172, 225, 175),
+    color: Color.fromARGB(255, 163, 213, 166),
     imageAsset: 'assets/category_meals_pictures/breakfast.png',
+    backgroundColor: Color.fromARGB(255, 140, 186, 143)
   ),
   Category(
     id: 'c8',
     title: 'Asian',
     color: Color.fromARGB(255, 225, 175, 209),
     imageAsset: 'assets/category_meals_pictures/asian.png',
+    backgroundColor: Color.fromARGB(255, 204, 143, 195)
   ),
   Category(
     id: 'c9',
     title: 'French',
     color: Color.fromARGB(255, 155, 176, 193),
     imageAsset: 'assets/category_meals_pictures/french.png',
+    backgroundColor: Color.fromARGB(255, 140, 159, 174)
   ),
   Category(
     id: 'c10',
     title: 'Summer',
     color: Colors.teal,
     imageAsset: 'assets/category_meals_pictures/summer.png',
+    backgroundColor: Color.fromARGB(255, 0, 116, 104)
   ),
 ];
 
@@ -163,7 +173,7 @@ const categoriesMeals = [
     ],
     title: 'Wiener Schnitzel',
     affordability: Affordability.luxurious,
-    complexity: Complexity.challenging,
+    complexity: Complexity.tough,
     imageAsset: 'assets/detailed_meals_pictures/wienerschnitzel.png',
     duration: 60,
     ingredients: [
@@ -297,7 +307,7 @@ const categoriesMeals = [
     ],
     title: 'Creamy Indian Chicken Curry',
     affordability: Affordability.pricey,
-    complexity: Complexity.challenging,
+    complexity: Complexity.tough,
     imageAsset: 'assets/detailed_meals_pictures/indianchickencurry.png',
     duration: 35,
     ingredients: [
