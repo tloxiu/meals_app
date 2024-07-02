@@ -31,6 +31,7 @@ class Meal {
     required this.categories,
     required this.title,
     required this.imageAsset,
+    required this.realMealAsset,
     required this.ingredients,
     required this.steps,
     required this.duration,
@@ -46,6 +47,7 @@ class Meal {
   final List<String> categories;
   final String title;
   final String imageAsset;
+  final String realMealAsset;
   final List<String> ingredients;
   final List<String> steps;
   final int duration;

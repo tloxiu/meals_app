@@ -1,14 +1,15 @@
 name: meals_app
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
+  sdk: ">=3.4.3 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  transparent_image: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -39,3 +40,14 @@ flutter:
     - assets/detailed_meals_pictures/indianchickencurry.png
     - assets/detailed_meals_pictures/chocolatesouffle.png
     - assets/detailed_meals_pictures/grilledasparagussalad.png
+    - assets/real_meals_pictures/spaghettiwithtomatosouce.png
+    - assets/real_meals_pictures/toasthawaii.png
+    - assets/real_meals_pictures/classichamburger.png
+    - assets/real_meals_pictures/wienerschnitzel.png
+    - assets/real_meals_pictures/saladwithsmokedsalmon.png
+    - assets/real_meals_pictures/orangemousse.png
+    - assets/real_meals_pictures/pancakes.png
+    - assets/real_meals_pictures/creamyindianchickencurry.png
+    - assets/real_meals_pictures/chocolatesouffle.png
+    - assets/real_meals_pictures/grilledasparagussalad.png
+
