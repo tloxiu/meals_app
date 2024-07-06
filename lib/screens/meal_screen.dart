@@ -2,22 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:meals_app/models/category_model.dart';
 
 class MealScreen extends StatelessWidget {
-  const MealScreen({required this.meal, required this.bcgColor, super.key});
+  const MealScreen(
+      {required this.meal, required this.onToggleFavourite, super.key});
 
   final Meal meal;
-  final Color bcgColor;
+  final void Function(Meal meal) onToggleFavourite;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 119, 118, 179),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 119, 118, 179),
-        foregroundColor: Colors.white,
         title: Text(
           meal.title,
-          style: const TextStyle(fontWeight: FontWeight.w600),
+          style: const TextStyle(fontWeight: FontWeight.w500),
         ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20),
+            child: IconButton(
+                onPressed: () {
+                  onToggleFavourite(meal);
+                },
+                icon: const Icon(Icons.star)),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -28,7 +36,7 @@ class MealScreen extends StatelessWidget {
                 elevation: 20,
                 borderRadius: BorderRadius.circular(20),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(22),
                   child: Image.asset(
                     meal.realMealAsset,
                     height: 300,
@@ -40,24 +48,19 @@ class MealScreen extends StatelessWidget {
             ),
             const Text(
               'Ingredients:',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
             for (final ingredient in meal.ingredients)
               Text(
-                ingredient,
-                style: const TextStyle(
-                    color: Colors.white),
-              ),
+                  textAlign: TextAlign.center,
+                  ingredient,
+                  style: const TextStyle(fontSize: 15)),
             const SizedBox(
               height: 20,
             ),
             const Text(
               'Steps:',
               style: TextStyle(
-                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),
@@ -69,7 +72,7 @@ class MealScreen extends StatelessWidget {
                 child: Text(
                   textAlign: TextAlign.center,
                   step,
-                  style: const TextStyle(color: Colors.white),
+                  style: const TextStyle(fontSize: 15),
                 ),
               ),
             const SizedBox(

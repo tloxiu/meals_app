@@ -10,13 +10,16 @@ extension StringExtension on String {
 }
 
 class MealsListScreen extends StatelessWidget {
-  const MealsListScreen({required this.category, super.key});
+  const MealsListScreen({required this.category, required this.onToggleFavourite, required this.availableMeals ,super.key});
 
   final Category category;
+  final void Function(Meal meal) onToggleFavourite;
+  final List<Meal> availableMeals;
+
 
   @override
   Widget build(BuildContext context) {
-    final filteredMeals = categoriesMeals.where((meal) {
+    final filteredMeals = availableMeals.where((meal) {
       return meal.categories.contains(category.id);
     }).toList();
 
@@ -27,7 +30,7 @@ class MealsListScreen extends StatelessWidget {
         foregroundColor: Colors.white,
         title: Text(
           category.title,
-          style: const TextStyle(fontWeight: FontWeight.w600),
+          style: const TextStyle(fontWeight: FontWeight.w500),
         ),
       ),
       body: ListView.builder(
@@ -42,7 +45,7 @@ class MealsListScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
-                        MealScreen(meal: tappedMeal, bcgColor: category.backgroundColor,),
+                        MealScreen(meal: tappedMeal, onToggleFavourite: onToggleFavourite,),
                   ),
                 );
               },

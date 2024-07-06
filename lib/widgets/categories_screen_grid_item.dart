@@ -4,10 +4,12 @@ import 'package:meals_app/screens/meals_list_screen.dart';
 
 class CategoriesScreenGridItem extends StatelessWidget {
   const CategoriesScreenGridItem(
-      {required this.category, required this.imageAsset, super.key});
+      {required this.category, required this.imageAsset, required this.onToggleFavourite, required this.availableMeals, super.key});
 
   final Category category;
   final String imageAsset;
+  final void Function(Meal meal) onToggleFavourite;
+  final List<Meal> availableMeals;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class CategoriesScreenGridItem extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (BuildContext context) => MealsListScreen(
-                category: category,
+                category: category, onToggleFavourite: onToggleFavourite, availableMeals: availableMeals,
               ),
             ),
           );
